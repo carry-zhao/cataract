@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>瀑布流</title>
+	<script src= "js/jquery-1.11.3.min.js"></script>
+	<script src="js/无限瀑布流.js"></script>
+	<style>
+	html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img { margin:0; padding:0; }
+		body {
+			background:#f2f2f2;
+		}
+		h1 {
+			text-align:center;
+		}
+		#wrapper {
+			width:1150px;
+			margin:20px auto 0;
+			position:relative;
+			border-top:2px solid #f0f;
+			text-align:center;
+		}
+		li.box {
+			list-style:none;
+			float:left;
+			margin:5px;
+			padding:10px;
+			background:#fff;
+			box-shadow:0 0 5px #666;
+			transition:all 1s;
+			-webkit-border-radius:5px;
+			-ms-border-radius:5px;
+			-o-border-radius:5px;
+			-moz-border-radius:5px;
+			border-radius:5px;
+		}
+		li.box img {
+			width:200px;
+		}
+	</style>
+</head>
+<body>
+	<h1>美女在哪里~~</h1>
+	<ul id="wrapper">
+		<li class="box"><img src="images/0.jpg" alt=""><p>图片信息0</p></li>
+		<li class="box"><img src="images/1.jpg" alt=""><p>图片信息1</p></li>
+		<li class="box"><img src="images/2.jpg" alt=""><p>图片信息2</p></li>
+		<li class="box"><img src="images/3.jpg" alt=""><p>图片信息3</p></li>
+		<li class="box"><img src="images/4.jpg" alt=""><p>图片信息4</p></li>
+		<li class="box"><img src="images/5.jpg" alt=""><p>图片信息5</p></li>
+		<li class="box"><img src="images/6.jpg" alt=""><p>图片信息6</p></li>
+		<li class="box"><img src="images/7.jpg" alt=""><p>图片信息7</p></li>
+		<li class="box"><img src="images/8.jpg" alt=""><p>图片信息8</p></li>
+		<li class="box"><img src="images/9.jpg" alt=""><p>图片信息9</p></li>
+		<li class="box"><img src="images/10.jpg" alt=""><p>图片信息10</p></li>
+		<li class="box"><img src="images/11.jpg" alt=""><p>图片信息11</p></li>
+		<li class="box"><img src="images/12.jpg" alt=""><p>图片信息12</p></li>
+		<li class="box"><img src="images/13.jpg" alt=""><p>图片信息13</p></li>
+		<li class="box"><img src="images/14.jpg" alt=""><p>图片信息14</p></li>
+		<li class="box"><img src="images/15.jpg" alt=""><p>图片信息15</p></li>
+		<li class="box"><img src="images/16.jpg" alt=""><p>图片信息16</p></li>
+		<li class="box"><img src="images/17.jpg" alt=""><p>图片信息17</p></li>
+	</ul>
+</body>
+<script>
+window.onload = function(){
+	var pubu = new Cataract("#wrapper");
+}
+</script>
+</html>
